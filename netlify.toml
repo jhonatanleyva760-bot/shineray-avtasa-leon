@@ -1,0 +1,61 @@
+# ================================================================
+#  Shineray Avtasa Leon -- Netlify config
+#  Sitio estatico: sin build command, publish dir = raiz
+# ================================================================
+
+[build]
+  publish = "."
+
+# ----------------------------------------------------------------
+# Redireccion HTTP -> HTTPS
+# ----------------------------------------------------------------
+[[redirects]]
+  from   = "http://shineray-avtasa-leon.netlify.app/*"
+  to     = "https://shineray-avtasa-leon.netlify.app/:splat"
+  status = 301
+  force  = true
+
+# ----------------------------------------------------------------
+# Cabeceras de seguridad -- todas las paginas
+# ----------------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Evita clickjacking
+    X-Frame-Options = "SAMEORIGIN"
+    # Evita que el browser "adivine" el tipo MIME (MIME sniffing)
+    X-Content-Type-Options = "nosniff"
+    # Solo envia el origen en requests cross-origin, sin path ni query
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Deshabilita APIs del browser que no se usan
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+    # CSP: solo recursos propios. unsafe-inline necesario por Elementor/WordPress inline CSS+JS
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'"
+    # HSTS: fuerza HTTPS por 1 anio (no activar hasta confirmar que HTTPS funciona bien)
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+
+# ----------------------------------------------------------------
+# Cache larga para assets estaticos (imagenes, CSS, JS, fuentes)
+# ----------------------------------------------------------------
+[[headers]]
+  for = "/wp-content/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/wp-includes/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ----------------------------------------------------------------
+# Sin cache en HTML (actualizaciones se ven inmediatamente)
+# ----------------------------------------------------------------
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
