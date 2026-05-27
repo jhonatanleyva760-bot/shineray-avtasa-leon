@@ -68,7 +68,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <meta property="og:title" content="Shineray Avtasa Leon - Camionetas de ultima milla">
 <meta property="og:description" content="Distribuidor oficial Shineray en Leon, Gto. Modelos T30, T32 y X30 para carga y reparto de ultima milla.">
 <meta property="og:url" content="https://shineray-avtasa-leon.netlify.app/">
-<meta property="og:image" content="https://shineray-avtasa-leon.netlify.app/wp-content/uploads/2026/05/banner-avtasa-desktop.jpg">
+<meta property="og:image" content="https://shineray-avtasa-leon.netlify.app/wp-content/uploads/2026/05/banner-portada-2026.png">
 <meta property="og:image:width" content="1920">
 <meta property="og:image:height" content="670">
 <meta property="og:locale" content="es_MX">
@@ -76,7 +76,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Shineray Avtasa Leon - Camionetas de ultima milla">
 <meta name="twitter:description" content="Distribuidor oficial Shineray en Leon, Gto. Modelos T30, T32 y X30.">
-<meta name="twitter:image" content="https://shineray-avtasa-leon.netlify.app/wp-content/uploads/2026/05/banner-avtasa-desktop.jpg">
+<meta name="twitter:image" content="https://shineray-avtasa-leon.netlify.app/wp-content/uploads/2026/05/banner-portada-2026.png">
 <link rel="shortlink" href="./">
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="./wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F">
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="./wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F&amp;format=xml">
@@ -184,7 +184,141 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				.lg-thumb-item.active {
 					opacity: 1;
 				}
-	         </style><script src="wp-includes/js/wp-emoji-release.min.js" defer=""></script></head>
+	         </style><script src="wp-includes/js/wp-emoji-release.min.js" defer=""></script>
+<!-- Fondo premium estilo Apple/Nike — "Últimos lanzamientos" sin gaps -->
+<style id="avtasa-lanzamientos-dark">
+  /* Kill gaps blancos: pintar wrappers padre */
+  body.page,
+  #page,
+  #content,
+  .ast-container,
+  #primary,
+  #main,
+  article,
+  .entry-content {
+    background: #0a0a0a !important;
+  }
+  /* UN SOLO degradado continuo en todo el wrapper Elementor — flujo armónico
+     entre hero swiper + "Últimos lanzamientos" + cards. */
+  .elementor-25 {
+    background:
+      radial-gradient(ellipse 90% 50% at 50% 0%, #2a2a2e 0%, #18181b 40%, #0a0a0a 90%),
+      #0a0a0a !important;
+    background-attachment: fixed !important;
+  }
+  /* Todos los containers internos transparentes para que se vea el degradado padre */
+  .elementor-25 .elementor-element.elementor-element-8603cf4,
+  .elementor-25 .elementor-element.elementor-element-425b789,
+  .elementor-25 .elementor-element.elementor-element-101d3d0,
+  .elementor-25 .elementor-element.elementor-element-8603cf4 > .e-con-inner,
+  .elementor-25 .elementor-element.elementor-element-425b789 > .e-con-inner,
+  .elementor-25 .elementor-element.elementor-element-101d3d0 > .e-con-inner {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    clip-path: none !important;
+  }
+  /* Paginación (puntos) del swiper superior visibles en fondo oscuro */
+  .elementor-25 .elementor-element.elementor-element-8603cf4 .swiper-pagination-bullet {
+    background-color: rgba(255,255,255,0.4) !important;
+  }
+  .elementor-25 .elementor-element.elementor-element-8603cf4 .swiper-pagination-bullet-active {
+    background-color: #ffffff !important;
+  }
+  /* Flechas del swiper superior en blanco */
+  .elementor-25 .elementor-element.elementor-element-8603cf4 .elementor-swiper-button svg {
+    fill: #ffffff !important;
+  }
+  /* Quitar max-width restrictivo para que se extienda a borde de pantalla */
+  .elementor-25 .elementor-element.elementor-element-425b789,
+  .elementor-25 .elementor-element.elementor-element-101d3d0 {
+    max-width: 100% !important;
+  }
+  /* Tarjetas del carrusel: transparentes para que se vea el degradado padre */
+  .elementor-25 .elementor-element.elementor-element-0d32594 .ue-carousel-item {
+    background-color: transparent !important;
+  }
+  /* Typography premium */
+  .elementor-element-425b789 .elementor-heading-title {
+    color: #ffffff !important;
+    letter-spacing: -0.02em !important;
+    font-weight: 700 !important;
+  }
+  .elementor-element-425b789 .elementor-button-text,
+  .elementor-element-425b789 .elementor-button {
+    color: #a1a1a6 !important;
+    fill: #a1a1a6 !important;
+  }
+  .elementor-element-425b789 .elementor-button:hover .elementor-button-text {
+    color: #ffffff !important;
+  }
+  .elementor-25 .elementor-element.elementor-element-0d32594 .card_carousel_title {
+    color: #ffffff !important;
+    letter-spacing: -0.01em !important;
+    font-size: 36px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    margin-top: 12px !important;
+    margin-bottom: 8px !important;
+  }
+  .elementor-25 .elementor-element.elementor-element-0d32594 .card_carousel_text {
+    color: #c9c9c9 !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    margin-bottom: 16px !important;
+  }
+  /* Botón "VER MODELO" un poco más grande para acompañar */
+  .elementor-25 .elementor-element.elementor-element-0d32594 .uc_more_btn {
+    font-size: 14px !important;
+    padding: 10px 22px !important;
+    letter-spacing: 0.5px !important;
+    font-weight: 600 !important;
+  }
+  @media (max-width: 767px) {
+    .elementor-25 .elementor-element.elementor-element-0d32594 .card_carousel_title {
+      font-size: 28px !important;
+    }
+    .elementor-25 .elementor-element.elementor-element-0d32594 .card_carousel_text {
+      font-size: 17px !important;
+    }
+  }
+  /* Flechas y línea divisora */
+  .elementor-25 .elementor-element.elementor-element-0d32594 .owl-carousel .owl-nav .owl-prev,
+  .elementor-25 .elementor-element.elementor-element-0d32594 .owl-carousel .owl-nav .owl-next {
+    color: #ffffff !important;
+  }
+  .elementor-25 .elementor-element.elementor-element-0d32594 .uc_classic_carousel_border {
+    background-color: #ffffff !important;
+  }
+  /* Glow showroom debajo de cada camioneta */
+  .elementor-25 .elementor-element.elementor-element-0d32594 .uc_classic_carousel_placeholder img {
+    filter: drop-shadow(0 30px 40px rgba(0,0,0,0.6)) drop-shadow(0 0 60px rgba(255,255,255,0.04)) !important;
+  }
+  /* Footer en mismo lenguaje oscuro premium */
+  .site-footer,
+  .site-primary-footer-wrap,
+  .site-below-footer-wrap,
+  footer#colophon {
+    background: #0a0a0a !important;
+    background-color: #0a0a0a !important;
+    color: #a1a1a6 !important;
+  }
+  .site-footer *,
+  footer#colophon * {
+    color: #a1a1a6 !important;
+  }
+  .site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4,
+  .site-footer .widget-title,
+  footer#colophon h1, footer#colophon h2, footer#colophon h3, footer#colophon h4 {
+    color: #ffffff !important;
+  }
+  .site-footer a:hover,
+  footer#colophon a:hover {
+    color: #ffffff !important;
+  }
+</style>
+</head>
 
 <body itemtype="https://schema.org/WebPage" itemscope="itemscope" class="home page-template page-template-elementor_header_footer page page-id-25 wp-custom-logo wp-embed-responsive ast-desktop ast-page-builder-template ast-no-sidebar astra-4.13.0 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-full-width-primary-header elementor-default elementor-template-full-width elementor-kit-247 elementor-page elementor-page-25 e--ua-appleWebkit e--ua-webkit" data-elementor-device-mode="desktop" style="">
 
@@ -263,7 +397,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 		<!-- ═══ PORTADA PRINCIPAL AVTASA SHINERAY ═══ -->
 		<div id="portada-principal" style="width:100%;overflow:hidden;background:#1a1a1a;margin:0;padding:0;line-height:0;">
-			<img src="wp-content/uploads/2026/05/banner-avtasa-desktop.jpg"
+			<img src="wp-content/uploads/2026/05/banner-portada-2026.png"
 				 alt="Shineray Avtasa León – Mini Trucks T30 T32 X30 – León, Gto"
 				 style="width:100%;height:auto;display:block;object-fit:cover;"
 				 loading="eager">

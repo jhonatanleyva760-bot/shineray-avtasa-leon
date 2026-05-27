@@ -179,6 +179,104 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <meta name="twitter:title" content="Modelos Shineray - T30, T32, T50 y X30 en Avtasa Leon">
 <meta name="twitter:description" content="Conoce los modelos Shineray disponibles en Avtasa Leon: T30, T32, T50 y X30. Camionetas de carga y reparto de ultima milla en Leon, Guanajuato.">
 <meta name="twitter:image" content="https://shineray-avtasa-leon.netlify.app/wp-content/uploads/2025/11/home-1-min.png">
+<!-- Fondo premium estilo Apple/Nike — degradado profesional sin gaps -->
+<style id="avtasa-modellist-dark">
+  /* 1) Pinta TODOS los wrappers para eliminar gaps blancos */
+  body.page,
+  #page,
+  #content,
+  .ast-container,
+  #primary,
+  #main,
+  article.post-1293,
+  .entry-content,
+  .elementor-1293 {
+    background: #000000 !important;
+  }
+  /* 2) UN SOLO degradado continuo — efecto Apple/showroom */
+  .elementor-1293 {
+    background:
+      radial-gradient(ellipse 90% 50% at 50% 0%, #2a2a2e 0%, #18181b 40%, #0a0a0a 90%),
+      #0a0a0a !important;
+    background-attachment: fixed !important;
+  }
+  /* 3) Containers internos transparentes para que se vea el degradado padre */
+  .elementor-1293 .elementor-element.elementor-element-b4987db,
+  .elementor-1293 .elementor-element.elementor-element-3c21ae7,
+  .elementor-1293 .elementor-element.elementor-element-b4987db > .e-con-inner,
+  .elementor-1293 .elementor-element.elementor-element-3c21ae7 > .e-con-inner,
+  .elementor-1293 .elementor-element.elementor-element-ec19c18 {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+  /* 4) Typography premium */
+  .elementor-1293 .elementor-element.elementor-element-b4987db h3.elementor-heading-title {
+    color: #ffffff !important;
+    letter-spacing: -0.02em !important;
+    font-weight: 700 !important;
+  }
+  .elementor-1293 .elementor-element.elementor-element-b4987db p.elementor-heading-title {
+    color: #a1a1a6 !important;  /* gris Apple */
+    font-weight: 400 !important;
+  }
+  .elementor-1293 .elementor-element.elementor-element-b4987db p.elementor-heading-title b {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+  }
+  .elementor-1293 .elementor-element-image-box-title,
+  .elementor-1293 .elementor-image-box-title {
+    color: #ffffff !important;
+    letter-spacing: -0.01em !important;
+  }
+  .elementor-1293 .elementor-image-box-description {
+    color: #a1a1a6 !important;  /* gris Apple para precios */
+    font-weight: 400 !important;
+  }
+  /* 5) Tab "Comerciales" */
+  .elementor-1293 .e-n-tab-title-text {
+    color: #ffffff !important;
+  }
+  /* 6) Glow sutil debajo de cada camioneta — efecto "showroom" */
+  .elementor-1293 .elementor-image-box-img img {
+    filter: drop-shadow(0 30px 40px rgba(0,0,0,0.6)) drop-shadow(0 0 60px rgba(255,255,255,0.04)) !important;
+    transition: transform 0.4s ease, filter 0.4s ease !important;
+  }
+  .elementor-1293 .elementor-element[data-premium-element-link]:hover .elementor-image-box-img img {
+    transform: translateY(-6px) !important;
+    filter: drop-shadow(0 40px 50px rgba(0,0,0,0.7)) drop-shadow(0 0 80px rgba(212,55,55,0.15)) !important;
+  }
+  /* 7) Footer en el mismo lenguaje oscuro — transición suave desde el contenido */
+  .site-footer,
+  .site-primary-footer-wrap,
+  .site-below-footer-wrap,
+  footer#colophon {
+    background: #0a0a0a !important;
+    background-color: #0a0a0a !important;
+    color: #a1a1a6 !important;
+  }
+  .site-footer *,
+  footer#colophon * {
+    color: #a1a1a6 !important;
+  }
+  .site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4,
+  .site-footer .widget-title,
+  footer#colophon h1, footer#colophon h2, footer#colophon h3, footer#colophon h4 {
+    color: #ffffff !important;
+  }
+  .site-footer a:hover,
+  footer#colophon a:hover {
+    color: #ffffff !important;
+  }
+  /* Transición suave entre la sección dark y el footer (gradiente de fade) */
+  .elementor-1293::after {
+    content: "";
+    display: block;
+    height: 80px;
+    background: linear-gradient(180deg, transparent 0%, #0a0a0a 100%);
+    margin-bottom: -1px;
+  }
+</style>
 </head>
 
 <body itemtype="https://schema.org/WebPage" itemscope="itemscope" class="page-template-default page page-id-1293 wp-custom-logo wp-embed-responsive ast-desktop ast-page-builder-template ast-no-sidebar astra-4.13.0 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-full-width-primary-header elementor-default elementor-kit-247 elementor-page elementor-page-1293 e--ua-appleWebkit e--ua-webkit" data-elementor-device-mode="desktop" style="">
