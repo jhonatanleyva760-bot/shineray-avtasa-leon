@@ -54,7 +54,7 @@
     # Deshabilita APIs del browser que no se usan
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
     # CSP: solo recursos propios. unsafe-inline necesario por Elementor/WordPress inline CSS+JS
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; worker-src 'self' blob:; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'"
     # HSTS: fuerza HTTPS por 1 anio (no activar hasta confirmar que HTTPS funciona bien)
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
 
