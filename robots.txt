@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shineray-avtasa-leon.netlify.app/sitemap.xml
+Sitemap: https://shinerayavtasa.com/sitemap.xml

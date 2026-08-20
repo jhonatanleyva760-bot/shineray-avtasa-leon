@@ -10,8 +10,32 @@
 # Redireccion HTTP -> HTTPS
 # ----------------------------------------------------------------
 [[redirects]]
-  from   = "http://shineray-avtasa-leon.netlify.app/*"
-  to     = "https://shineray-avtasa-leon.netlify.app/:splat"
+  from   = "http://shinerayavtasa.com/*"
+  to     = "https://shinerayavtasa.com/:splat"
+  status = 301
+  force  = true
+
+# ----------------------------------------------------------------
+# www -> dominio raiz (evita contenido duplicado en Google)
+# ----------------------------------------------------------------
+[[redirects]]
+  from   = "http://www.shinerayavtasa.com/*"
+  to     = "https://shinerayavtasa.com/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "https://www.shinerayavtasa.com/*"
+  to     = "https://shinerayavtasa.com/:splat"
+  status = 301
+  force  = true
+
+# ----------------------------------------------------------------
+# Dominio viejo de Netlify -> dominio propio (preserva el SEO ganado)
+# ----------------------------------------------------------------
+[[redirects]]
+  from   = "https://shineray-avtasa-leon.netlify.app/*"
+  to     = "https://shinerayavtasa.com/:splat"
   status = 301
   force  = true
 
@@ -30,7 +54,7 @@
     # Deshabilita APIs del browser que no se usan
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
     # CSP: solo recursos propios. unsafe-inline necesario por Elementor/WordPress inline CSS+JS
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'"
     # HSTS: fuerza HTTPS por 1 anio (no activar hasta confirmar que HTTPS funciona bien)
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
 

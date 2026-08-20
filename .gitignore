@@ -3,3 +3,6 @@ wp-content/uploads/2026/05/truck-t30-new.png
 wp-content/uploads/2026/05/truck-t32-side.png
 wp-content/uploads/2026/05/preview-*.jpg
 wp-content/uploads/2026/05/preview-*.png
+
+# Respaldos del script de cambio de dominio
+*.bak

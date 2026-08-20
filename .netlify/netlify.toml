@@ -60,8 +60,8 @@ for = "/"
 Cache-Control = "public, max-age=0, must-revalidate"
 
 [[redirects]]
-from = "http://shineray-avtasa-leon.netlify.app/*"
-to = "https://shineray-avtasa-leon.netlify.app/:splat"
+from = "http://shinerayavtasa.com/*"
+to = "https://shinerayavtasa.com/:splat"
 status = 301.0
 force = true
 
